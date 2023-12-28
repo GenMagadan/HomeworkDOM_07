@@ -222,64 +222,44 @@ body {
    gap: 16px;
 }
 
-.one {
+
+.backpack {
+   background-size: cover;
+   height: 420px;
    grid-area: 1 / 1 / 2 / 2;
 }
 
-.backpack {
-   background-image: url(./image/foto/man\ with\ backpack.jpg);
+
+.readhead {
    background-size: cover;
    height: 420px;
-}
-
-.two {
    grid-area: 1 / 2 / 2 / 3;
 }
 
-.readhead {
-   background-image: url(./image/foto/readhead.png);
+
+.hoodie {
    background-size: cover;
    height: 420px;
-}
-
-.three {
    grid-area: 1 / 3 / 2 / 4;
 }
 
-.hoodie {
-   background-image: url(./image/foto/guy\ in\ hoodie.png);
+
+.sneakers {
    background-size: cover;
    height: 420px;
-}
-
-.four {
    grid-area: 2 / 1 / 3 / 2;
 }
 
-.sneakers {
-   background-image: url(./image/foto/bearded\ in\ sneakers.png);
+.jacket {
    background-size: cover;
    height: 420px;
-}
-
-.five {
    grid-area: 2 / 2 / 3 / 3;
 }
 
-.jacket {
-   background-image: url(./image/foto/brunette\ in\ a\ jacket.png);
-   background-size: cover;
-   height: 420px;
-}
-
-.six {
-   grid-area: 2 / 3 / 3 / 4;
-}
-
 .shirt {
-   background-image: url(./image/foto/girl\ in\ a\ shirt.png);
    background-size: cover;
    height: 420px;
+   grid-area: 2 / 3 / 3 / 4;
 }
 
 .browse-product {

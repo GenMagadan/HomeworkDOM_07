@@ -1,0 +1,50 @@
+[
+   {
+      "class_product": "backpack",
+      "image": "./image/foto/backpack.jpg",
+      "name_img": "backpack",
+      "name_product": "ELLERY X M'O CAPSULE",
+      "product_description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+      "price_product": "52$"
+   },
+   {
+      "class_product": "readhead",
+      "image": "./image/foto/readhead.png",
+      "name_img": "readhead",
+      "name_product": "ELLERY X M'O CAPSULE",
+      "product_description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+      "price_product": "52$"
+   },
+   {
+      "class_product": "hoodie",
+      "image": "./image/foto/hoodie.png",
+      "name_img": "hoodie",
+      "name_product": "ELLERY X M'O CAPSULE",
+      "product_description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+      "price_product": "52$"
+   },
+   {
+      "class_product": "sneakers",
+      "image": "./image/foto/sneakers.png",
+      "name_img": "sneakers",
+      "name_product": "ELLERY X M'O CAPSULE",
+      "product_description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+      "price_product": "52$"
+   },
+   {
+      "class_product": "jacket",
+      "image": "./image/foto/jacket.png",
+      "name_img": "jacket",
+      "name_product": "ELLERY X M'O CAPSULE",
+      "product_description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+      "price_product": "52$"
+   },
+   {
+      "class_product": "shirt",
+      "image": "./image/foto/shirt.png",
+      "name_img": "shirt",
+      "name_product": "ELLERY X M'O CAPSULE",
+      "product_description": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+      "price_product": "52$"
+   }
+]
