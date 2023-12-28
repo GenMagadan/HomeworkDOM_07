@@ -9,12 +9,13 @@ async function productData() {
       const feturedItems = document.querySelector('.product_cards');
       data.forEach(({ class_product, image, name_img, name_product, product_description, price_product }) => {
          const productCard =
-            `
-            <div class="${class_product}" style="background-image: url(${image})" "alt="${name_img}"></div>
-            <div class="text_card">
-               <h5>${name_product}</h5>
-               <p class="product-description">${product_description}</p>
-               <p class="price-product">${price_product}</p>
+            `<div class="card_product">
+               <div class="${class_product}" style="background-image: url(${image})" "alt="${name_img}"></div>
+                  <div class="text_card">
+                     <h5>${name_product}</h5>
+                     <p class="product-description">${product_description}</p>
+                     <p class="price-product">${price_product}</p>
+               </div>
             </div>
          `
          feturedItems.insertAdjacentHTML("beforeend", productCard);

@@ -199,7 +199,7 @@ body {
    line-height: 16px;
 }
 
-.product_cards .product-description {
+.product-description {
    font-family: Lato;
    font-weight: 300;
    font-size: 14px;
@@ -207,12 +207,13 @@ body {
    color: rgba(159, 159, 159);
 }
 
-.product_cards .price-product {
+.price-product {
+   color: #F16D7F;
    font-family: Lato;
-   font-weight: 300;
    font-size: 16px;
-   line-height: 19px;
-   color: rgba(159, 159, 159);
+   font-style: normal;
+   font-weight: 400;
+   line-height: normal;
 }
 
 .text_card {
