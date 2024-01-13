@@ -1,0 +1,26 @@
+[
+  {
+    "photo": "./image/foto/backpack.jpg",
+    "name": "MANGO PEOPLE T-SHIRT",
+    "price": "300",
+    "color": "Red",
+    "size": "XL",
+    "quantity": "2"
+  },
+  {
+    "photo": "./image/foto/backpack.jpg",
+    "name": "ELLERY X M'O CAPSULE",
+    "price": "400",
+    "color": "Red",
+    "size": "X",
+    "quantity": "3"
+  },
+  {
+    "photo": "./image/foto/backpack.jpg",
+    "name": "MANGO PEOPLE T-SHIRT",
+    "price": "200",
+    "color": "Blue",
+    "size": "XLL",
+    "quantity": "4"
+  }
+]
