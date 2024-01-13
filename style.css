@@ -275,11 +275,13 @@ body {
   background-color: rgba(255, 106, 106);
   color: white;
 }
-.container_box {
-  padding-top: 200px;
+.product_basket {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+}
+.container_box {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 40px;
   font-family: sans-serif;

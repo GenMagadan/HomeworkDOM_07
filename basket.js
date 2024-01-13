@@ -1,6 +1,6 @@
 async function productData() {
   try {
-    const response = await fetch("basket.json")
+    const response = await fetch("data.json")
     if (!response.ok) {
       throw new Error(
         "Получена ошибка при обработке basket.json"
@@ -12,23 +12,25 @@ async function productData() {
       ".container_box"
     )
     data.forEach(
-      ({ photo, name, price, color, size, quantity }) => {
+      ({
+        class_product,
+        image,
+        name_img,
+        name_product,
+        product_description,
+        price_product,
+      }) => {
         const container = `
          <div class="container">
          <button class="remove_card"></button>
-          <div class="card">
-            <img class="image_product" src="${photo}" alt="${name}">
-            <div class="content">
-               <p class="name_product">${name}</p>
-               <p class="price">Price: <span class="summ_price">$${price}</span></p>
-               <p class="color">Color: <span class="name_color">${color}</span></p>
-               <p class="size">Size: <span class="size_product">${size}</span></p>
-               <div class="quantity">
-                  <label for="number_quantity">Quantity:</label>
-                  <input id="number_quantity" type="text" value="${quantity}">
-               </div>
-            </div>
+         <div class="card_product">
+         <div class="${class_product}" style="background-image: url(${image})" "alt="${name_img}"></div>
+            <div class="text_card">
+               <h5>${name_product}</h5>
+               <p class="product-description">${product_description}</p>
+               <p class="price-product">${price_product}</p>
          </div>
+      </div>
          `
         containerBox.insertAdjacentHTML(
           "beforeend",
