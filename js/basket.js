@@ -4,11 +4,10 @@ async function createWrap() {
   )
 
   productBoxAdd.classList.add("add-products")
-  productBoxAdd.classList.add("center")
 
   const cartTitle = document.createElement("h2")
   cartTitle.classList.add("add-products__title")
-  cartTitle.textContent = "Cart Items"
+  cartTitle.textContent = "Ваша корзина"
 
   const productWrapAdd = document.createElement("div")
   productWrapAdd.classList.add(
@@ -28,10 +27,10 @@ async function add() {
   console.log(cartWrap)
   cartWrap.innerHTML = ""
   products_add.forEach(
-    ({ image, name_img, name_product, price_product }) => {
+    ({ name_img, name_product, price_product }) => {
       const productCartAdd = `
 <div class="add-product">
-<img class="add-product__image" src="./image/foto/${image}" alt="${name_img}">
+<img class="add-product__image" src="./image/foto/${name_img}.png" alt="${name_img}">
 <div class="add-product__info">
    <button class="add-product__close"><img src="./image/logo/Vector.svg"></button>
    <h2 class="add-product__name">${name_product}</h2>
@@ -53,9 +52,9 @@ async function add() {
   const productCloseElem = document.querySelectorAll(
     ".add-product__close"
   )
-  productCloseElem.forEach((elem) => {
-    elem.addEventListener("click", () => {
-      const productClose = elem.closest(".add-product")
+  productCloseElem.forEach((el) => {
+    el.addEventListener("click", () => {
+      const productClose = el.closest(".add-product")
       const cart = document.querySelector(".add-product")
       productClose.remove()
       delCart(productClose)
@@ -69,14 +68,4 @@ async function add() {
       }
     })
   })
-}
-
-function delCart(cart) {
-  const cartEl = cart.children[0].alt
-  for (let i = 0; i < products_add.length; i++) {
-    if (cartEl === products_add[i].productImage) {
-      products_add.splice(i, i + 1)
-      console.log(products_add)
-    }
-  }
 }

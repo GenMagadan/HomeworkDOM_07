@@ -335,6 +335,14 @@ body {
 .add-product__hig {
   color: #f16d7f;
 }
+
+.add-product__close {
+  position: absolute;
+  right: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}
 @media (max-width: 1024px) and (min-width: 768px) {
   .content_header {
     padding-inline: 32px;
