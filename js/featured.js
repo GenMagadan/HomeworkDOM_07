@@ -39,39 +39,20 @@ async function productData() {
       }
     )
     const btnAdd = document.querySelectorAll(".add-card")
-    //  btnAdd.forEach((el) => {
-    //    el.addEventListener("click", () => {
-    //      const btnAddCard = el.closest(".card_product")
-    //      console.log(btnAddCard)
-    //      const product = {
-    //        image: btnAddCard.children[0].children[1].alt,
-    //        price_product:
-    //          btnAddCard.children[1].children[2].innerHTML.slice(
-    //            1
-    //          ),
-    //        name_product:
-    //          btnAddCard.children[1].children[0].innerHTML,
-    //      }
-    //      console.log(product)
-    //      if (products_add.length === 0) {
-    //        createWrap()
-    //      }
-    //      products_add.push(product)
-    //      add()
-    //    })
-    //  })
+
     btnAdd.forEach((el) => {
       el.addEventListener("click", () => {
         const btnAddCard = el.closest(".card_product")
         console.log(btnAddCard)
         const product = {
-          image: btnAddCard.children[0].children[0].alt,
+          image: btnAddCard.children[0].children[0].src,
           price_product:
             btnAddCard.children[0].children[1].children[2]
               .innerHTML,
           name_product:
             btnAddCard.children[0].children[1].children[0]
               .innerHTML,
+          name_img: btnAddCard.children[0].children[0].alt,
         }
         console.log(product)
         if (products_add.length === 0) {

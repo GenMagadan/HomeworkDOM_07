@@ -31,16 +31,15 @@ async function add() {
     ({ image, name_img, name_product, price_product }) => {
       const productCartAdd = `
 <div class="add-product">
-<img class="add-product__image" src="./image/foto/${image}}" alt="${name_img}">
+<img class="add-product__image" src="./image/foto/${image}" alt="${name_img}">
 <div class="add-product__info">
-   <button class="add-product__close"><img src="./image/close.svg"></button>
+   <button class="add-product__close"><img src="./image/logo/Vector.svg"></button>
    <h2 class="add-product__name">${name_product}</h2>
    <p class="add-product__price">Price: <span class="add-product__hig">$${price_product}</span></p>
    <p class="add-product__color">Color: Red</p>
    <p class="add-product__size">Size: Xl </p>
    <div class="add-product__input-quantity">
-      <span class="add-product__quantity">Quantity: </span><input class="add-product__input"
-         type="number">
+      <span class="add-product__quantity">Quantity: 2</span>
    </div>
 </div>
 </div>
@@ -62,7 +61,7 @@ async function add() {
       delCart(productClose)
       if (products_add.length === 0) {
         const productBoxAdd = document.querySelector(
-          ".product__box-add"
+          ".product_basket"
         )
         productBoxAdd.classList.remove("add-products")
         productBoxAdd.classList.remove("center")
