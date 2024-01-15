@@ -24,7 +24,7 @@ async function createWrap() {
 
 async function add() {
   const cartWrap = document.querySelector(".wrap")
-  console.log(cartWrap)
+  //   console.log(cartWrap)
   cartWrap.innerHTML = ""
   products_add.forEach(
     ({ name_img, name_product, price_product }) => {
@@ -55,17 +55,27 @@ async function add() {
   productCloseElem.forEach((el) => {
     el.addEventListener("click", () => {
       const productClose = el.closest(".add-product")
-      const cart = document.querySelector(".add-product")
+      const card = document.querySelector(".add-product")
       productClose.remove()
       delCart(productClose)
+      console.log(products_add.length)
       if (products_add.length === 0) {
-        const productBoxAdd = document.querySelector(
+        const productBoxAdded = document.querySelector(
           ".product_basket"
         )
-        productBoxAdd.classList.remove("add-products")
-        productBoxAdd.classList.remove("center")
-        productBoxAdd.innerHTML = ""
+        productBoxAdded.classList.remove("add-products")
+        productBoxAdded.innerHTML = ""
       }
     })
   })
+}
+function delCart(card) {
+  const cardEl = card.children[0].alt
+  //   console.log(cardEl)
+  for (let i = 0; i < products_add.length; i++) {
+    if (cardEl === products_add[i].name_img) {
+      products_add.splice(i, i + 1)
+      console.log(products_add)
+    }
+  }
 }

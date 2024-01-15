@@ -43,8 +43,7 @@ async function productData() {
     btnAdd.forEach((el) => {
       el.addEventListener("click", () => {
         const btnAddCard = el.closest(".card_product")
-        console.dir(btnAddCard)
-        console.dir(btnAddCard.children[0].children[0])
+        //   console.dir(btnAddCard)
         const product = {
           image: btnAddCard.children[0].children[0],
           price_product:
@@ -55,11 +54,12 @@ async function productData() {
               .innerHTML,
           name_img: btnAddCard.children[0].children[0].alt,
         }
-        console.log(product)
+        //   console.log(product)
         if (products_add.length === 0) {
           createWrap()
         }
         products_add.push(product)
+        console.log(products_add)
         add()
       })
     })

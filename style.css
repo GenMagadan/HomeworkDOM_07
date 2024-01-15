@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  font-family: sans-serif;
 }
 
 body {
@@ -336,6 +337,14 @@ body {
   color: #f16d7f;
 }
 
+.add-products__title {
+  margin-bottom: 36px;
+  color: #222;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: bold;
+  max-width: 210px;
+}
 .add-product__close {
   position: absolute;
   right: 20px;
